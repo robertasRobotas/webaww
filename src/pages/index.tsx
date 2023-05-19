@@ -13,12 +13,22 @@ import { Footer } from "@/components/footer";
 const translationEn = {
   headingText: "Web pages, components & digital solutions for your business.",
   callToAction: "Let's get in touch",
+  home: "HOME",
+  services: "SERVICES",
+  contacts: "CONTACTS",
+  sayHello: "Or say hello +370 60987 494",
+  getInTouch: "Get in touch info@webaww.com",
 };
 
 const translationLt = {
   headingText:
     "Web puslapiai, komponentai & skaitmeniniai sprendimai jūsų verslui.",
   callToAction: "Susisiekime",
+  home: "PAGRINDINIS",
+  services: "PASLAUGOS",
+  contacts: "KONTAKTAI",
+  sayHello: "Pasisveikinkime +370 60987 494",
+  getInTouch: "Susisiekime info@webaww.com",
 };
 
 i18next.use(initReactI18next).init({

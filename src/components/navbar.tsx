@@ -3,14 +3,12 @@
 import React, { useState } from "react";
 import useDisableTransitionOnResize from "../hooks/userResize";
 import i18next from "i18next";
-
-const Links = [
-  { name: "HOME", link: "/" },
-  { name: "SERVICES", link: "/" },
-  { name: "CONTACT", link: "/" },
-];
+import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 const Nav = () => {
+  const { t } = useTranslation();
+
   const [open, setOpen] = useState(false);
 
   const isResizing = useDisableTransitionOnResize();
@@ -51,19 +49,33 @@ const Nav = () => {
           open ? "left-0" : "left-[-100vw]"
         }  ${isResizing ? "transition-none" : "transition-all duration-200"}`}
       >
-        {Links.map((link) => (
-          <li
-            key={link.name}
-            className="md:ml-6 text-sm md:my-0 my-3 font-medium"
+        <li className="md:ml-6 text-sm md:my-0 my-3 font-medium">
+          <Link
+            href="/"
+            className="text-gray-800 hover:text-gray-400 duration-500"
           >
-            <a
-              href={link.link}
-              className="text-gray-800 hover:text-gray-400 duration-500"
-            >
-              {link.name}
-            </a>
-          </li>
-        ))}
+            {t("home")}
+          </Link>
+        </li>
+
+        <li className="md:ml-6 text-sm md:my-0 my-3 font-medium">
+          <Link
+            href="/services"
+            className="text-gray-800 hover:text-gray-400 duration-500"
+          >
+            {t("services")}
+          </Link>
+        </li>
+
+        <li className="md:ml-6 text-sm md:my-0 my-3 font-medium">
+          <Link
+            href="/contacts"
+            className="text-gray-800 hover:text-gray-400 duration-500"
+          >
+            {t("contacts")}
+          </Link>
+        </li>
+
         <li className="md:ml-6 text-sm md:my-0 my-3 font-medium">
           <select
             name="language"

@@ -1,11 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import useDisableTransitionOnResize from "../hooks/userResize";
+import Link from "next/link";
 import i18next from "i18next";
 import { SocialIcons } from "./socialIcons";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="my-16 md:hidden">
@@ -19,10 +22,10 @@ const Footer = () => {
             <h4 className="text-center">© webAww</h4>
           </li>
           <li>
-            <h4 className="text-center">Get in touch info@webaww.com</h4>
+            <h4 className="text-center">{t("getInTouch")}</h4>
           </li>
           <li>
-            <h4 className="text-center">Or say hello +370 60987 494</h4>
+            <h4 className="text-center">{t("sayHello")}</h4>
           </li>
           <li className="flex justify-center">
             <SocialIcons />
@@ -34,14 +37,14 @@ const Footer = () => {
         <div className="md:flex md:justify-between items-center container mx-auto max-w-screen-xl md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px]">
           <div>
             <ul className="flex flex-col gap-4">
-              <li className="text-center text-sm">
-                <a>HOME</a>
+              <li className="text-center text-xs font-semibold tracking-wide	">
+                <Link href="/">{t("home")}</Link>
               </li>
-              <li className="text-center text-sm">
-                <a>SERVICES</a>
+              <li className="text-center text-xs font-semibold	 tracking-wide	">
+                <Link href="/services">{t("services")}</Link>
               </li>
-              <li className="text-center text-sm">
-                <a>CONTACT</a>
+              <li className="text-center text-xs font-semibold	 tracking-wide	">
+                <Link href="/contacts">{t("contacts")}</Link>
               </li>
             </ul>
           </div>
@@ -59,14 +62,10 @@ const Footer = () => {
 
           <ul className="flex flex-col justify-center gap-4">
             <li>
-              <h4 className="text-center text-sm">
-                Get in touch info@webaww.com
-              </h4>
+              <h4 className="text-center text-sm">{t("getInTouch")}</h4>
             </li>
             <li>
-              <h4 className="text-center text-sm">
-                Or say hello +370 60987 494
-              </h4>
+              <h4 className="text-center text-sm">{t("sayHello")}</h4>
             </li>
             <li className="flex justify-center">
               <SocialIcons />
