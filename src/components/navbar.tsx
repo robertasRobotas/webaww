@@ -52,7 +52,10 @@ const Nav = () => {
         }  ${isResizing ? "transition-none" : "transition-all duration-200"}`}
       >
         {Links.map((link) => (
-          <li key={link.name} className="md:ml-6 text-sm md:my-0 my-3">
+          <li
+            key={link.name}
+            className="md:ml-6 text-sm md:my-0 my-3 font-medium"
+          >
             <a
               href={link.link}
               className="text-gray-800 hover:text-gray-400 duration-500"
@@ -61,12 +64,12 @@ const Nav = () => {
             </a>
           </li>
         ))}
-        <li className="md:ml-6 text-sm md:my-0 my-3">
+        <li className="md:ml-6 text-sm md:my-0 my-3 font-medium">
           <select
             name="language"
             id="mzp-c-language-switcher-select"
             onChange={onLanguageChange}
-            className="bg-transparent cursor-pointer"
+            className="bg-transparent cursor-pointer outline-0"
           >
             <option value="en">EN</option>
             <option value="lt">LT</option>
