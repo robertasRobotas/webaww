@@ -12,11 +12,13 @@ import { Footer } from "@/components/footer";
 
 const translationEn = {
   headingText: "Web pages, components & digital solutions for your business.",
+  callToAction: "Let's get in touch",
 };
 
 const translationLt = {
   headingText:
     "Web puslapiai, komponentai & skaitmeniniai sprendimai jūsų verslui.",
+  callToAction: "Susisiekime",
 };
 
 i18next.use(initReactI18next).init({
@@ -33,19 +35,19 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mx-auto max-w-screen-xl px-6 md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px] min-h-screen">
+      <div className="container mx-auto max-w-screen-xl px-6 md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px] md:min-h-[calc(100vh-158px)]">
         <Nav />
-        <div className="flex flex-col md:grid md:grid-container md:grid-cols-12 gap-16 justify-between">
+        <div className="flex flex-col md:grid md:grid-container md:grid-cols-12 gap-16 justify-between md:pb-24">
           <div className="flex flex-col gap-8 col-span-7 justify-between">
-            <h1 className="text-xl sm:text-2xl md:text-3xl">
+            <h1 className="!important text-xl sm:text-2xl sm:leading-9 md:text-3xl md:leading-10 tracking-wide">
               {t("headingText")}
             </h1>
             <img alt="responsive screens" src={responsiveImage.src} />
             <Link
               href="/"
-              className="text-sm flex items-center gap-2 font-medium md:hidden"
+              className="text-sm flex items-center gap-2 font-medium md:hidden tracking-wider"
             >
-              Get a free consultation
+              {t("callToAction")}
               <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
             </Link>
           </div>
@@ -58,15 +60,15 @@ export default function Home() {
             <SocialIcons />
             <Link
               href="/"
-              className="flex text-sm items-center gap-2 font-medium"
+              className="flex text-sm items-center gap-2 font-medium tracking-wider"
             >
-              Get a free consultation
+              {t("callToAction")}
               <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
             </Link>
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
