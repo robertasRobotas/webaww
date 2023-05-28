@@ -19,8 +19,8 @@ const Nav = () => {
   };
 
   return (
-    <div className="w-full md:flex justify-between mb-12 md:mb-24">
-      <div className="bg-background relative z-50 flex items-center justify-between py-4">
+    <div className="w-full md:flex justify-between mb-12 md:mb-22">
+      <div className="bg-background relative z-50 flex items-center justify-between py-6">
         <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800 italic">
           webAww .
         </div>

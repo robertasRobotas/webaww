@@ -11,7 +11,8 @@ import { SocialIcons } from "@/components/socialIcons";
 import { Footer } from "@/components/footer";
 
 const translationEn = {
-  headingText: "Web pages, components & digital solutions for your business.",
+  headingText:
+    "Web pages, React components & AI solutions for your business needs.",
   callToAction: "Let's get in touch",
   home: "HOME",
   services: "SERVICES",
@@ -22,7 +23,7 @@ const translationEn = {
 
 const translationLt = {
   headingText:
-    "Web puslapiai, komponentai & skaitmeniniai sprendimai jūsų verslui.",
+    "Web puslapiai, React komponentai & dirbtinio intelekto sprendimai jūsų verslui.",
   callToAction: "Susisiekime",
   home: "PAGRINDINIS",
   services: "PASLAUGOS",
@@ -53,13 +54,15 @@ export default function Home() {
               {t("headingText")}
             </h1>
             <img alt="responsive screens" src={responsiveImage.src} />
-            <Link
-              href="/"
-              className="text-sm flex items-center gap-2 font-medium md:hidden tracking-wider"
-            >
-              {t("callToAction")}
-              <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
-            </Link>
+            <div>
+              <Link
+                href="/contacts"
+                className="text-sm inline-flex items-center gap-2 font-medium md:hidden tracking-wider border-b border-black"
+              >
+                <div>{t("callToAction")}</div>
+                <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
+              </Link>
+            </div>
           </div>
           <img
             alt="responsive screens"
@@ -68,13 +71,15 @@ export default function Home() {
           />
           <div className="w-full hidden md:flex  col-start-1 col-end-13 justify-between items-center">
             <SocialIcons />
-            <Link
-              href="/"
-              className="flex text-sm items-center gap-2 font-medium tracking-wider"
-            >
-              {t("callToAction")}
-              <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
-            </Link>
+            <div>
+              <Link
+                href="/contacts"
+                className="flex text-sm items-center gap-2 font-medium tracking-wider border-b border-black"
+              >
+                {t("callToAction")}
+                <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

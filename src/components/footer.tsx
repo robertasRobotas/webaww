@@ -6,7 +6,11 @@ import i18next from "i18next";
 import { SocialIcons } from "./socialIcons";
 import { useTranslation } from "react-i18next";
 
-const Footer = () => {
+
+type FooterProps = {
+  isGrey?: boolean;
+};
+const Footer: React.FC<FooterProps> = ({ isGrey }) => {
   const { t } = useTranslation();
 
   return (
@@ -33,17 +37,17 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="hidden bg-white md:block md:py-8">
+      <div className={`hidden md:block md:py-8 ${isGrey ? "" : "bg-white"}`}>
         <div className="md:flex md:justify-between items-center container mx-auto max-w-screen-xl md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px]">
           <div>
             <ul className="flex flex-col gap-4">
-              <li className="text-center text-xs font-semibold tracking-wide	">
+              <li className="text-center text-xs font-semibold tracking-wide">
                 <Link href="/">{t("home")}</Link>
               </li>
-              <li className="text-center text-xs font-semibold	 tracking-wide	">
+              <li className="text-center text-xs font-semibold tracking-wide">
                 <Link href="/services">{t("services")}</Link>
               </li>
-              <li className="text-center text-xs font-semibold	 tracking-wide	">
+              <li className="text-center text-xs font-semibold tracking-wide">
                 <Link href="/contacts">{t("contacts")}</Link>
               </li>
             </ul>
