@@ -8,30 +8,10 @@ import services from "../../assets/services.jpg";
 import webPages from "../../assets/web-pages.jpg";
 import reactComponents from "../../assets/react-components.jpg";
 import aiSolutions from "../../assets/ai-solutions.jpg";
-
+import arrow from "../../assets/arrow.png";
 import { Footer } from "@/components/footer";
-
-const translationEn = {
-  headingText:
-    "Web pages, React components & AI solutions for your business needs.",
-  callToAction: "Let's get in touch",
-  home: "HOME",
-  services: "SERVICES",
-  contacts: "CONTACTS",
-  sayHello: "Or say hello +370 60987 494",
-  getInTouch: "Get in touch info@webaww.com",
-};
-
-const translationLt = {
-  headingText:
-    "Web puslapiai, React komponentai & dirbtinio intelekto sprendimai jūsų verslui.",
-  callToAction: "Susisiekime",
-  home: "PAGRINDINIS",
-  services: "PASLAUGOS",
-  contacts: "KONTAKTAI",
-  sayHello: "Pasisveikinkime +370 60987 494",
-  getInTouch: "Susisiekime info@webaww.com",
-};
+import { translationLt } from "../../translations/translationsLt";
+import { translationEn } from "../../translations/translationsEn";
 
 i18next.use(initReactI18next).init({
   resources: {
@@ -52,10 +32,10 @@ export default function Home() {
         <div className="grid gap-8 md:grid-cols-2">
           <div className="flex gap-3 flex-col md:pt-12 md:pl-12 lg:pt-16 lg:pl-16 xl:pt-28">
             <h1 className="text-xl sm:text-2xl md:text-4xl font-medium">
-              Services
+              {t("servicesTitle")}
             </h1>
             <h4 className="max-w-[320px] font-medium">
-              Claim your space in the digital world stress-free.
+              {t("servicesSubtitle")}{" "}
             </h4>
           </div>
           <div>
@@ -73,14 +53,20 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="md:flex md:flex-col md:pt-4 xl:pt-24 grid md:grid-cols-2 md:pl-12 lg:pl-16">
               <h1 className="text-xl sm:text-2xl md:text-4xl font-medium pb-4">
-                Web Pages
+                {t("webPages")}
               </h1>
               <h4 className="md:max-w-[320px] font-medium">
-                We will design and build a web page that will help your clients
-                to find & meet your business or service on the internet. Our aim
-                is to provide the best user experience to your clients on a web
-                page and save your time.
+                {t("webPagesText")}
               </h4>
+              <div className="flex pt-2">
+                <Link
+                  href="/contacts"
+                  className="flex text-sm items-center gap-2 font-medium tracking-wider border-b border-black"
+                >
+                  {t("seeExamples")}
+                  <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
+                </Link>
+              </div>
             </div>
             <div>
               <img
@@ -98,13 +84,20 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="md:flex md:flex-col md:pt-4 xl:pt-24 grid md:grid-cols-2 md:pl-12 lg:pl-16">
               <h1 className="text-xl sm:text-2xl md:text-4xl font-medium pb-4">
-                React Components
+                {t("reactComponents")}
               </h1>
               <h4 className="md:max-w-[320px] font-medium">
-                We use React development to break down tricky, long-lasting
-                projects into easy-to-handle component parts. With React, you
-                get quicker development, better performance, and easier updates.
+                {t("reactComponentsText")}
               </h4>
+              <div className="flex pt-2">
+                <Link
+                  href="/contacts"
+                  className="flex text-sm items-center gap-2 font-medium tracking-wider border-b border-black"
+                >
+                  {t("discoverComponents")}
+                  <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
+                </Link>
+              </div>
             </div>
             <div>
               <img
@@ -122,14 +115,20 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="md:flex md:flex-col md:pt-4 xl:pt-24 grid md:grid-cols-2 md:pl-12 lg:pl-16">
               <h1 className="text-xl sm:text-2xl md:text-4xl font-medium pb-4">
-                AI Solutions
+                {t("aiSolutions")}
               </h1>
               <h4 className="md:max-w-[320px] font-medium">
-                Transform customer service with AI-driven 24/7 support, enhance
-                user engagement through personalized interaction, automate
-                routine tasks for increased efficiency, and use advanced
-                analytics to identify customer needs.
+                {t("aiSolutionsText")}
               </h4>
+              <div className="flex pt-2">
+                <Link
+                  href="/contacts"
+                  className="flex text-sm items-center gap-2 font-medium tracking-wider border-b border-black"
+                >
+                  {t("findSolutions")}
+                  <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
+                </Link>
+              </div>
             </div>
             <div>
               <img

@@ -9,28 +9,8 @@ import computerImage from "../assets/ComputerPhoto.jpg";
 import arrow from "../assets/arrow.png";
 import { SocialIcons } from "@/components/socialIcons";
 import { Footer } from "@/components/footer";
-
-const translationEn = {
-  headingText:
-    "Web pages, React components & AI solutions for your business needs.",
-  callToAction: "Let's get in touch",
-  home: "HOME",
-  services: "SERVICES",
-  contacts: "CONTACTS",
-  sayHello: "Or say hello +370 60987 494",
-  getInTouch: "Get in touch info@webaww.com",
-};
-
-const translationLt = {
-  headingText:
-    "Web puslapiai, React komponentai & dirbtinio intelekto sprendimai jūsų verslui.",
-  callToAction: "Susisiekime",
-  home: "PAGRINDINIS",
-  services: "PASLAUGOS",
-  contacts: "KONTAKTAI",
-  sayHello: "Pasisveikinkime +370 60987 494",
-  getInTouch: "Susisiekime info@webaww.com",
-};
+import { translationLt } from "../translations/translationsLt";
+import { translationEn } from "../translations/translationsEn";
 
 i18next.use(initReactI18next).init({
   resources: {
@@ -50,7 +30,7 @@ export default function Home() {
         <Nav />
         <div className="flex flex-col md:grid md:grid-container md:grid-cols-12 gap-16 justify-between md:pb-24">
           <div className="flex flex-col gap-8 col-span-7 justify-between">
-            <h1 className="!important text-xl sm:text-2xl sm:leading-9 md:text-3xl md:leading-10 tracking-wide">
+            <h1 className="!important text-xl sm:text-2xl sm:leading-9 md:text-3xl md:leading-10 tracking-wide font-medium">
               {t("headingText")}
             </h1>
             <img alt="responsive screens" src={responsiveImage.src} />
