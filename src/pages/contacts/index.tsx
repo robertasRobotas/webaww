@@ -28,10 +28,10 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   const { t } = useTranslation();
-  const [name, useName] = useState<string>("");
-  const [email, useEmail] = useState<string>("");
-  const [company, useCompany] = useState<string>("");
-  const [message, useMessage] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [company, setCompany] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
   const [freeConsultation, setFreeConsultation] = useState<boolean>(false);
   const [terms, setTerms] = useState<boolean>(false);
 
@@ -91,10 +91,10 @@ export default function Home() {
         .then(
           (result) => {
             console.log("Sent");
-            useName("");
-            useEmail("");
-            useCompany("");
-            useMessage("");
+            setName("");
+            setEmail("");
+            setCompany("");
+            setMessage("");
             showSuccessAlert();
           },
           (error) => {
@@ -124,28 +124,28 @@ export default function Home() {
                 placeholder={t("yourName") as string}
                 className="py-2 px-4 mt-4 rounded-lg text-sm"
                 value={name}
-                onChange={(e) => useName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 name="email"
                 placeholder={t("yourEmail") as string}
                 className="py-2 px-4 rounded-lg text-sm"
                 value={email}
-                onChange={(e) => useEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 name="company"
                 placeholder={t("companyName") as string}
                 className="py-2 px-4 rounded-lg text-sm"
                 value={company}
-                onChange={(e) => useCompany(e.target.value)}
+                onChange={(e) => setCompany(e.target.value)}
               />
               <textarea
                 name="message"
                 placeholder={t("yourMessage") as string}
                 className="py-2 px-4 rounded-lg resize-none h-28 text-sm"
                 value={message}
-                onChange={(e) => useMessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
               />
 
               <div className="flex items-center gap-2">
