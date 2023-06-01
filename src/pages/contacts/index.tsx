@@ -11,17 +11,20 @@ import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
 
 import { Footer } from "@/components/footer";
-import { translationLt } from "../../translations/translationsLt";
-import { translationEn } from "../../translations/translationsEn";
+// import { translationLt } from "../../translations/translationsLt";
+// import { translationEn } from "../../translations/translationsEn";
 
-i18next.use(initReactI18next).init({
-  resources: {
-    en: { translation: translationEn },
-    lt: { translation: translationLt },
-  },
-  lng: "en",
-  fallbackLng: "en",
-});
+// i18next.use(initReactI18next).init({
+//   resources: {
+//     en: { translation: translationEn },
+//     lt: { translation: translationLt },
+//   },
+//   lng: "en",
+//   fallbackLng: "en",
+//   interpolation: {
+//     escapeValue: false,
+//   },
+// });
 
 export default function Home() {
   const { t } = useTranslation();
@@ -95,7 +98,7 @@ export default function Home() {
             showSuccessAlert();
           },
           (error) => {
-            console.log(error.text);
+            // console.log(error.text);
           }
         );
     } else {
@@ -109,7 +112,7 @@ export default function Home() {
 
       <div className="container mx-auto max-w-screen-xl px-6 md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px] pb-8">
         <Nav />
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 md:min-h-[calc(100vh-378px)]">
           <div className="flex gap-3 flex-col">
             <h1 className="text-2xl md:text-4xl font-medium">
               {t("contactsTitle")}
@@ -150,12 +153,13 @@ export default function Home() {
                   type="checkbox"
                   className="w-5 h-5"
                   name="isConsultation"
+                  id="isConsultation"
                   checked={freeConsultation}
                   onChange={() =>
                     setFreeConsultation((prevState) => !prevState)
                   }
                 />
-                <span>I would like to get a free consultation.</span>
+                <span>{t("freeConsultation")}</span>
               </div>
               <div className="flex items-center gap-2">
                 <input
@@ -164,14 +168,14 @@ export default function Home() {
                   checked={terms}
                   onChange={() => setTerms((prevState) => !prevState)}
                 />
-                <span>I agree with your privacy policy.</span>
+                <span>{t("privacyPolicy")}</span>
               </div>
               <button
                 type="button"
                 onClick={throttle(onSubmitMessage, 2000)}
-                className="bg-white w-28 py-1 rounded-lg flex gap-2 items-center justify-center"
+                className="bg-white w-28 py-1 rounded-lg flex gap-2 items-center justify-center border-2 border-main"
               >
-                <span>Send</span>
+                <span>{t("sendButton")}</span>
                 <img src={plane.src} className="h-4 w-4" />
               </button>
             </form>
@@ -182,7 +186,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer isGrey />
+      <Footer />
     </>
   );
 }

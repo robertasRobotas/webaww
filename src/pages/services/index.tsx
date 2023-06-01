@@ -10,17 +10,17 @@ import reactComponents from "../../assets/react-components.jpg";
 import aiSolutions from "../../assets/ai-solutions.jpg";
 import arrow from "../../assets/arrow.png";
 import { Footer } from "@/components/footer";
-import { translationLt } from "../../translations/translationsLt";
-import { translationEn } from "../../translations/translationsEn";
+// import { translationLt } from "../../translations/translationsLt";
+// import { translationEn } from "../../translations/translationsEn";
 
-i18next.use(initReactI18next).init({
-  resources: {
-    en: { translation: translationEn },
-    lt: { translation: translationLt },
-  },
-  lng: "en",
-  fallbackLng: "en",
-});
+// i18next.use(initReactI18next).init({
+//   resources: {
+//     en: { translation: translationEn },
+//     lt: { translation: translationLt },
+//   },
+//   lng: "en",
+//   fallbackLng: "en",
+// });
 
 export default function Home() {
   const { t } = useTranslation();

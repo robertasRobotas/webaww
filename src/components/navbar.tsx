@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useDisableTransitionOnResize from "../hooks/userResize";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
@@ -84,6 +84,7 @@ const Nav = () => {
             id="mzp-c-language-switcher-select"
             onChange={onLanguageChange}
             className="bg-transparent cursor-pointer outline-0"
+            value={i18next.language}
           >
             <option value="en">EN</option>
             <option value="lt">LT</option>

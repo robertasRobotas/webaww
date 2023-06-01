@@ -28,4 +28,7 @@ export const translationLt = {
   yourEmail: "E-mail'as",
   companyName: "Įmonės pavadinimas",
   yourMessage: "Jūsų žinutė",
+  freeConsultation: "Norėčiau nemokamos konsultacijos.",
+  privacyPolicy: "Sutinku su puslapio privatumo politika.",
+  sendButton: "Siūsti",
 };

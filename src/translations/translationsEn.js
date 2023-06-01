@@ -27,4 +27,7 @@ export const translationEn = {
   yourEmail: "Your email",
   companyName: "Company name",
   yourMessage: "Your message",
+  freeConsultation: "I would like to get a free consultation.",
+  privacyPolicy: "I agree with your privacy policy.",
+  sendButton: "Send",
 };
