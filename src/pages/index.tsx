@@ -34,21 +34,23 @@ export default function Home() {
               {t("headingText")}
             </h1>
             <img alt="responsive screens" src={responsiveImage.src} />
-            <div>
+            <div className="md:hidden">
               <Link
                 href="/contacts"
-                className="text-sm inline-flex items-center gap-2 font-medium md:hidden tracking-wider border-b border-black"
+                className="text-sm inline-flex items-center gap-2 font-medium tracking-wider border-b border-black"
               >
                 <div>{t("callToAction")}</div>
                 <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
               </Link>
             </div>
           </div>
-          <img
-            alt="responsive screens"
-            src={computerImage.src}
-            className="col-start-9 col-end-13 h-full object-cover"
-          />
+          <div className="col-start-9 col-end-13 flex">
+            <img
+              alt="responsive screens"
+              src={computerImage.src}
+              className=" h-full object-cover"
+            />
+          </div>
           <div className="w-full hidden md:flex  col-start-1 col-end-13 justify-between items-center">
             <SocialIcons />
             <div>

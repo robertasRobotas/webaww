@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <div className="container mx-auto max-w-screen-xl px-6 md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px] pb-8">
         <Nav />
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 md:pb-8">
           <div className="flex gap-3 flex-col md:pt-12 md:pl-12 lg:pt-16 lg:pl-16 xl:pt-28">
             <h1 className="text-xl sm:text-2xl md:text-4xl font-medium">
               {t("servicesTitle")}
@@ -42,7 +42,7 @@ export default function Home() {
             <img
               alt="responsive screens"
               src={services.src}
-              className="col-start-9 col-end-13 h-full object-cover"
+              className="object-cover"
             />
           </div>
         </div>
