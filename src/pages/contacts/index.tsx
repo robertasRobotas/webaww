@@ -180,7 +180,7 @@ export default function Home() {
               </button>
             </form>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-start">
             <Image alt="email" src={emailPhoto} />
           </div>
         </div>
