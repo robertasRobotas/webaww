@@ -60,7 +60,7 @@ export default function Home() {
               </h4>
               <div className="flex pt-2">
                 <Link
-                  href="/contacts"
+                  href="/webpages"
                   className="flex text-sm items-center gap-2 font-medium tracking-wider border-b border-black"
                 >
                   {t("seeExamples")}
