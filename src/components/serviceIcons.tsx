@@ -8,17 +8,17 @@ export function ServiceIcons() {
   return (
     <ul className="flex gap-4 md:w-32 items-center">
       <li className="w-6">
-        <Link href="https://www.facebook.com/" target="_blank">
-          <Image alt="facebook icon" src={ai} />
+        <Link href="/ai">
+          <Image alt="ai icon" src={ai} />
         </Link>
       </li>
       <li className="w-6 ">
-        <Link href="https://www.instagram.com/" target="_blank">
-          <Image alt="instagram icon" src={react} />
+        <Link href="/react">
+          <Image alt="react icon" src={react} />
         </Link>
       </li>
       <li className="w-6">
-        <Link href="https://www.youtube.com/" target="_blank">
+        <Link href="/webpages">
           <Image alt="youtube icon" src={web} />
         </Link>
       </li>
