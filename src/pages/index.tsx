@@ -7,7 +7,7 @@ import { initReactI18next, useTranslation } from "react-i18next";
 import responsiveImage from "../assets/ComponentsPhoto.jpg";
 import computerImage from "../assets/ComputerPhoto.jpg";
 import arrow from "../assets/arrow.png";
-import { SocialIcons } from "@/components/socialIcons";
+import { ServiceIcons } from "@/components/serviceIcons";
 import { Footer } from "@/components/footer";
 // import { translationLt } from "../translations/translationsLt";
 // import { translationEn } from "../translations/translationsEn";
@@ -52,7 +52,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full hidden md:flex  col-start-1 col-end-13 justify-between items-center">
-            <SocialIcons />
+            <ServiceIcons />
             <div>
               <Link
                 href="/contacts"

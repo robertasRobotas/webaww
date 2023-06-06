@@ -55,8 +55,6 @@ const WebSite = ({ template }: any) => {
 export default function Home() {
   const { t } = useTranslation();
 
-  console.log("templates", templates);
-
   return (
     <>
       <div className="container mx-auto max-w-screen-xl px-6 md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px] pb-8">
