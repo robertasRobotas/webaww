@@ -58,7 +58,7 @@ const services = () => {
             </div>
             <div className="text-gray-800 font-bold mb-4">
               <span className="text-2xl">$</span>
-              <span className="text-3xl" x-text="annual ? '74' : '79'">
+              <span className="text-3xl" x-text="annual ? 74' : '79'">
                 74
               </span>
               <span className="text-gray-500 font-medium text-sm">/mo</span>
@@ -69,7 +69,7 @@ const services = () => {
           </div>
           <div className="px-5 pt-4 pb-5">
             <div className="text-xs text-gray-800 font-semibold uppercase mb-4">
-              What's included
+              What is included
             </div>
             <ul>
               <li className="flex items-center py-1">

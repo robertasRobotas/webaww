@@ -11,9 +11,7 @@ const ReactComponents = ({ isReplaceComponent }: any) => {
       <Navbar />
       <div className="grid grid-cols-3 gap-4">
         <Points />
-
         {!isReplaceComponent ? <Chat /> : <Services />}
-
         <Form />
       </div>
     </div>
