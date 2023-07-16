@@ -70,7 +70,7 @@ const form = () => {
             </button>
           </div>
           <div className="text-xs text-gray-500 italic text-center">
-            You'll be charged $253, including $48 for VAT in Italy
+            You will be charged $253, including $48 for VAT in Italy
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ const form = () => {
             </button>
           </div>
           <div className="text-xs text-gray-500 italic text-center">
-            You'll be charged $253, including $48 for VAT in Italy
+            You will be charged $253, including $48 for VAT in Italy
           </div>
         </div>
       </div>
