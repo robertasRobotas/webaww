@@ -21,7 +21,7 @@ export const translationEn = {
   reactComponentsText:
     "We use React development to break down tricky, long-lasting projects into easy-to-handle component parts. With React, you get quicker development, better performance, and easier updates.",
   reactSlogan: "Accomplish business needs with custom components.",
-  reactExample: "For example you decided that inside your app that you want to",
+  reactExample: "For example you decided that inside your app you want to",
   reactButton: "replace middle component",
   reactPerformanceTitle: "Performance",
   reactPerformanceSubtitle:
