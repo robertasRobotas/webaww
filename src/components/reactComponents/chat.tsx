@@ -1,6 +1,6 @@
 import React from "react";
 
-const chat = () => {
+const Chat = () => {
   return (
     <div className="relative bg-white shadow-lg rounded-lg border-2 duration-300 hover:bg-slate-100 border-x-stone-200">
       <header className="pt-6 pb-4 px-5 border-b border-gray-200">
@@ -177,4 +177,4 @@ const chat = () => {
   );
 };
 
-export default chat;
+export default Chat;

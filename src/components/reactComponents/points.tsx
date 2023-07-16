@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const points = () => {
+const Points = () => {
   const { t } = useTranslation();
 
   return (
@@ -112,4 +112,4 @@ const points = () => {
   );
 };
 
-export default points;
+export default Points;

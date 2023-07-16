@@ -1,6 +1,6 @@
 import React from "react";
 
-const services = () => {
+const Services = () => {
   return (
     <div
       className="shadow-lg max-w-5xl mx-auto border-2  border-x-stone-200 rounded-md hover:bg-slate-100 duration-150"
@@ -134,4 +134,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;

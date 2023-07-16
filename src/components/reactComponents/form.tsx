@@ -1,6 +1,6 @@
 import React from "react";
 
-const form = () => {
+const Form = () => {
   return (
     <div className="rounded-md bg-white px-8 pb-6 rounded-b shadow-lg duration-300  hover:bg-slate-100 border-2 border-x-stone-200">
       <div x-show="card">
@@ -91,4 +91,4 @@ const form = () => {
   );
 };
 
-export default form;
+export default Form;
