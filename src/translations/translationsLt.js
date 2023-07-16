@@ -15,8 +15,26 @@ export const translationLt = {
     "Mes kuriame lengvai naudojamus, individualius ar jau paruoštus interneto puslapius, leidžiančius jums sutelkti dėmesį į savo verslą, kol mes pasirūpinsime jūsų skaitmeniniais poreikiais. Nesvarbu, ar reikia unikalaus dizaino, ar greito įdiegimo - mes viskuo pasirūpinsime.",
   seeExamples: "Žiūrėti pavyzdžius",
   reactComponents: "React Komponentai",
+  aiSolutionsSubtitle: "Nuobodų darbą palik dirbtiniam intelektui.",
+  reactSubtitle:
+    "Su „React“, jūs gaunate greitesnį kūrimo procesą, didenį našumą bei paprastesnius atnaujinimus.",
   reactComponentsText:
-    "Naudojame „React“, kad sudėtingus, ilgalaikius projektus suskaidytume į lengvai valdomas komponentų dalis. Su „React“, jūs gaunate greitesnį kūrimo procesą, didenį našumą bei paprastesnius atnaujinimus.",
+    "Naudojame React, kad sudėtingus, ilgalaikius projektus suskaidytume į lengvai valdomas komponentų dalis. Su „React“, jūs gaunate greitesnį kūrimo procesą, didenį našumą bei paprastesnius atnaujinimus.",
+  reactSlogan: "Įgyvendink verslo poreikius su specializuotais komponentais",
+  reactExample: "Isivaizduok, kad savo aplikacijoj nusprendei",
+  reactButton: "pakeisti vidurinį komponentą",
+  reactPerformanceTitle: "Greitis",
+  reactPerformanceSubtitle:
+    "Su React.js tavo aplikacija veiks greičiau ir sklandžiau",
+  reactComponentsTitle: "Komponentai",
+  reactComponentsSubtitle:
+    "React leidžia kurti perpanaudojamus komponentus. Tai pagreitina aplikacijos kurimo greitį bei padaro ją lengvai prižiūrima.",
+  reactScalabilityTitle: "Plėtimasis",
+  reactScalabilitySubtitle:
+    "Aplikacijos funcionalumą bus nesunku plėsti kuomet tavo verslas augs.",
+  reactMarketTitle: "Buvimas versle",
+  reactScalabilitySubtitle:
+    "Prodžioje sukursim tik svarbiausius komponentus bei kuomet jau būsite internete - sukursim likusius.",
   discoverComponents: "Atraskite Komponentus",
   aiSolutions: "AI Sprendimai",
   aiSolutionsText:

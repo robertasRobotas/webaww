@@ -1,16 +1,15 @@
 import Image from "next/image";
-import fb from "../assets/social/fb.svg";
 import linked from "../assets/social/in.svg";
-import insta from "../assets/social/insta.svg";
+import github from "../assets/social/github.svg";
 import yt from "../assets/social/yt.svg";
 import Link from "next/link";
 
 export function SocialIcons() {
   return (
-    <ul className="flex gap-4 md:w-32 items-center">
+    <ul className="flex gap-4 md:w-full items-center justify-center">
       <li className="w-4">
-        <Link href="https://www.facebook.com/" target="_blank">
-          <Image alt="facebook icon" src={fb} />
+        <Link href="https://github.com/robertasRobotas/" target="_blank">
+          <Image alt="github icon" src={github} />
         </Link>
       </li>
       <li className="w-4 ">
@@ -18,12 +17,7 @@ export function SocialIcons() {
           <Image alt="linkedin icon" src={linked} />
         </Link>
       </li>
-      <li className="w-4 ">
-        <Link href="https://www.instagram.com/" target="_blank">
-          <Image alt="instagram icon" src={insta} />
-        </Link>
-      </li>
-      <li className="w-6">
+      <li className="w-5">
         <Link href="https://www.youtube.com/" target="_blank">
           <Image alt="youtube icon" src={yt} />
         </Link>
