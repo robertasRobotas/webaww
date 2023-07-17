@@ -34,7 +34,7 @@ export default function Home() {
               {t("headingText")}
             </h1>
             <img alt="responsive screens" src={responsiveImage.src} />
-            <div className="md:hidden">
+            <div className="md:hidden flex justify-between">
               <Link
                 href="/contacts"
                 className="text-sm inline-flex items-center gap-2 font-medium tracking-wider border-b border-black"
@@ -42,6 +42,7 @@ export default function Home() {
                 <div>{t("callToAction")}</div>
                 <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
               </Link>
+              <ServiceIcons />
             </div>
           </div>
           <div className="col-start-9 col-end-13 flex">
