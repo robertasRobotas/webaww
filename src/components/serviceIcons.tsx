@@ -8,8 +8,8 @@ export function ServiceIcons() {
   return (
     <ul className="flex gap-4 md:w-32 items-center">
       <li className="w-6">
-        <Link href="/ai">
-          <Image alt="ai icon" src={ai} />
+        <Link href="/webpages">
+          <Image alt="youtube icon" src={web} />
         </Link>
       </li>
       <li className="w-6 ">
@@ -18,8 +18,8 @@ export function ServiceIcons() {
         </Link>
       </li>
       <li className="w-6">
-        <Link href="/webpages">
-          <Image alt="youtube icon" src={web} />
+        <Link href="/ai">
+          <Image alt="ai icon" src={ai} />
         </Link>
       </li>
     </ul>

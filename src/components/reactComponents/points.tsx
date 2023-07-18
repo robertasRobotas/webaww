@@ -102,7 +102,7 @@ const Points = () => {
                 {t("reactMarketTitle")}
               </h4>
               <p className="text-sm text-gray-500 leading-relaxed">
-                {t("reactScalabilitySubtitle")}
+                {t("reactMarketSubtitle")}
               </p>
             </div>
           </div>

@@ -33,16 +33,16 @@ export const translationEn = {
   reactScalabilitySubtitle:
     "Applications built with React.js can easily scale with your business as it grows.",
   reactMarketTitle: "Time to market",
-  reactScalabilitySubtitle:
-    "Firstly we will build the most important components and after you're in market will will add other components.",
+  reactMarketSubtitle:
+    "Firstly we will build the most important components and after you're in market will will add other ones.",
   discoverComponents: "Discover Components",
   aiSolutions: "AI Solutions",
   aiSolutionsText:
     "Transform customer service with AI-driven 24/7 support, enhance user engagement through personalized interaction, automate routine tasks for increased efficiency, and use advanced analytics to identify customer needs.",
-  aiSolutionsSubtitle: "Keep the borring stuff for AI.",
+  aiSolutionsSubtitle: "Keep the boring stuff for AI.",
   findSolutions: "Find Solutions",
   contactsTitle: "Contacts",
-  contactsSubtitle: "We will be happy to answer any your question.",
+  contactsSubtitle: "We will be happy to answer any of your questions.",
   yourName: "Your name",
   yourEmail: "Your email",
   companyName: "Company name",
