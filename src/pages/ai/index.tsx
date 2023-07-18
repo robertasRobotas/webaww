@@ -45,7 +45,9 @@ export default function React({ content }: any) {
 
           <section className="flex gap-4 my-12 flex-wrap">
             {suggestions.map((suggestion: any) => (
-              <div className="mr-4">{suggestion}</div>
+              <div key={suggestion} className="mr-4">
+                {suggestion}
+              </div>
             ))}
           </section>
 
