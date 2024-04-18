@@ -38,27 +38,16 @@ export default function React() {
         <div className="container mx-auto max-w-screen-xl px-6 md:px-8 md:max-w-[880px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1440px]">
           <h2 className="text-3xl mt-8 mb-4 font-medium">{t("reactSlogan")}</h2>
 
-          <h3 className="text-lg  mb-8">
-            <span>
-              {t("reactExample")}
-              <button
-                className="bg-[#268277] text-white ml-3 px-4 py-2 rounded-lg hover:bg-[#349e91] duration-150"
-                onClick={() => setReplaceComponent(true)}
-              >
-                {t("reactButton")}
-              </button>
-            </span>
-          </h3>
-          <ReactComponents isReplaceComponent={isReplaceComponent} />
-
+          <Link href="https://www.boardq.io/" className="underline">
+            boardq
+          </Link>
           <div className="flex pt-12">
-            <Link
-              href="/react"
-              className="flex text-sm items-center gap-2 font-medium tracking-wider border-b border-black"
-            >
-              {t("callToActionContacted")}
-              <Image alt="arrow" src={arrow} className="h-3 w-3.5" />
-            </Link>
+            <iframe
+              src="https://www.boardq.io/board/sunniest_capitals_in_europe"
+              width="100%"
+              height="1000"
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
       </div>
