@@ -46,7 +46,7 @@ export default function React() {
               src="https://www.boardq.io/board/sunniest_capitals_in_europe"
               width="100%"
               height="1000"
-              frameborder="0"
+              frameBorder="0"
             ></iframe>
           </div>
         </div>
